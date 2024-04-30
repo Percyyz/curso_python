@@ -11,4 +11,25 @@ La sentencia de decisiones en python es `if`. en su estrucctura debemos añadir 
 if true:
     print("es verdad")
 ```
+`if` va ejecutar el codigo dependiendo si cumple una condicion
+un flujo normal es un codigo que va linia por linia
+> Ejemplo
+```python
+saludo="hola como estas"
+nombre="jose luis"
+print(saludo+nombre)
+## CON IF
+saludo="hola como estas"
+nombre="jose luis"
+if True:
+     print(saludo+nombre)
+#
+saludo="hola como estas"
+nombre="jose luis"
+if True:
+     print("soy verdad")
+else:
+     print("soy falso")
+print("se ejecuta siempre")
+```
 ## CICLOS
