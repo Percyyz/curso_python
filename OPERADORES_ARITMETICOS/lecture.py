@@ -36,3 +36,23 @@ promedio_mujeres=(cantidad_mujeres*100)/30
 
 #mostar el dato
 print(f"el promedio es de :{promedio_mujeres}%")
+
+### EJERCICIO 03
+#crea un programa que calcule el promedio de tres numeros ingresados por el usuario 
+nota_uno:int=int("ingrese la primera nota")
+nota_dos:int=int("ingrese la segunda nota")
+nota_tres:int=int("ingrese la tercera nota")
+promedio:int=(nota_uno+nota_dos+nota_tres)/3
+print(promedio)
+
+### EJERCICIO 04
+#escribe un programa que calcule el area de un circulo pide al usuario que ingrese el radio y muestre 
+#el area
+radio=float(input("ingrese el radio de un circulo"))
+pi:float=3.14
+area=pi*radio **2
+print(area)
+
+
+
+
