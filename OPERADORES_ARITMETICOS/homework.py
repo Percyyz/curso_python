@@ -11,7 +11,7 @@ print(promedio)
 # 4.-ALGORITMO QUE CALCULE EL VOLUMEN DE UNA ESFERA
 radio = float(input("Ingrese el radio de la esfera: "))
 #  Calcular el área de la esfera
-pi = 3.14159  # Valor aproximado de pi
+pi = 3.14  # Valor aproximado de pi
 area = 4 * pi * radio ** 2
 #Mostrar el resultado
 print("El área de la esfera es:", area)
