@@ -49,3 +49,15 @@ print("El número ingresado es par y mayor que 10:", comparacion)
 numero=4
 comparar=numero%2!=0
 print("es primo?",comparar)
+
+# 14.-LOS ALUMNOS DE UN CURSO SE HAN DIVIDIDO EN DOS GRUPOS "A" Y "B" DE ACUERDO AL SEXO Y EL NOMBRE. EL GRUPO "A" ESTA FORMADO
+##### POR LAS MUJERES CON UN NOMBRE ANTERIOR A LA "M" Y LOS HOMBRES CON UN NOMBRE POSTERIOR A LA "N" Y EL GRUPO "B" POR EL RESTO.
+##### ESCRIBIR UN PROGRAMA QUE PREGUNTA AL USUARIO SU NOMBRE Y SEXO, Y MUESTRE POR PANTALLA EL GRUPO QUE LE CORRESPONDE
+nombre = input("Ingrese su nombre: ")
+sexo = input("Ingrese su sexo (M/F): ")
+grupo_A = nombre < 'M'
+grupo_B = nombre >= 'N'
+grupo_A = grupo_A + (sexo == 'M')
+grupo_B = grupo_B + (sexo == 'F')
+grupo = ["B", "A"][grupo_A * grupo_B]
+print("Usted pertenece al Grupo", grupo)
