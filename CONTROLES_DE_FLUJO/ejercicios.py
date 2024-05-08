@@ -21,5 +21,9 @@ else:
 # la cuenta de atras desde ese numero asta cero separados por comas 
 
 numero=int(input("ingrese un numero entero positivo "))
+resultado=""
 for i in range(numero, -1, -1):
-    print(i, end=",")
+    resultado+=str(i)
+    if i >0:
+        resultado+=","
+print(resultado)
