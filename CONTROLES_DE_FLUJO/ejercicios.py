@@ -12,7 +12,14 @@ else:
 
 contraseña="yarihuaman14"
 contraseña_usuario=input("ingrese una contraseña :")
-if contraseña==contraseña_usuario:
+if contraseña==contraseña_usuario :
     print("la contraseña es correcta")
 else:
     print("la contraseña es incorrecta")
+
+## escribir un programa que pida al usuario un numero entero positivo y muestre por pantalla
+# la cuenta de atras desde ese numero asta cero separados por comas 
+
+numero=int(input("ingrese un numero entero positivo "))
+for i in range(numero, -1, -1):
+    print(i end=",")
