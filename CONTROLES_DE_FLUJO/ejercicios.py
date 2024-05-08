@@ -6,3 +6,13 @@ if edad_usuario>=18:
 else:
     print("no es mayor de edad")
 
+## escribir un programa que almacene la cadena de caracteres contraseña en una variable
+# pregunte al usuario por una contraseña y y imprima por pantalla si la contraseña introducida por el usuario 
+# coincide con la guardada en la variable sin tener en cuenta mayusculas y minusculas
+
+contraseña="yarihuaman14"
+contraseña_usuario=input("ingrese una contraseña :")
+if contraseña==contraseña_usuario:
+    print("la contraseña es correcta")
+else:
+    print("la contraseña es incorrecta")
