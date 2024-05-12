@@ -12,7 +12,7 @@ else:
 
 contraseña="yarihuaman14"
 contraseña_usuario=input("ingrese una contraseña :")
-if contraseña==contraseña_usuario :
+if contraseña == contraseña_usuario:
     print("la contraseña es correcta")
 else:
     print("la contraseña es incorrecta")
