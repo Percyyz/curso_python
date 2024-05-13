@@ -36,8 +36,10 @@ print(f"la cantidad de lestras a que tengo es {contador_a}")
 # crear un programa que me cuente la cantidad de comas y me muestre sus indices
 usuario:str=input("ingrese una oracion :")
 contador=0
-for i,n in enumerate("1"):
-    contador+=1
-    print(f"el indice es {i} y la cantidad de comas es {n}")
+for n in range(0,len(usuario)):
+    if usuario[n]==",":
+       contador+=1
+    print(f" la cantidad de comas es {n}")
+print(contador)
 
 
