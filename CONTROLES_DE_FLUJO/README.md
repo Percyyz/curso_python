@@ -33,4 +33,14 @@ else:
 print("se ejecuta siempre")
 ```
 ## CICLOS
+ son los contrloes de flujo que repiten codigo y sintaxis es la siguitente
+### for
+ este codigo imprime los numeros del 1 al 10
+ >ejemplo
+ ```python
+ for n in range(1,11):
+     print(n)
+ ```
+### while
+
 
