@@ -41,6 +41,11 @@ print("se ejecuta siempre")
  for n in range(1,11):
      print(n)
  ```
+ ## uso de memoria es for
+ `enumerate->` en palabras pequeñas hace uso mas de memoria pero cuando son textos grandes
+ y medianos, almacena menos y ejecuta mas rrapido.
+ `range->` para oraciones pequeñas
+ `in->` para oraciones medianas es mas rrapido y consume menos.
 ### while
 
 
