@@ -34,7 +34,9 @@ print("se ejecuta siempre")
 ```
 ## CICLOS
  son los contrloes de flujo que repiten codigo y sintaxis es la siguitente
-### for
+### for 
+>[!TIP]
+>se una para recorer listas o textos
  este codigo imprime los numeros del 1 al 10
  >ejemplo
  ```python
@@ -46,11 +48,46 @@ print("se ejecuta siempre")
  y medianos, almacena menos y ejecuta mas rrapido.
  `range->` para oraciones pequeñas
  `in->` para oraciones medianas es mas rrapido y consume menos.
+
 ### while
+ es un mecanismo que usa `python` para repetir instrucciones, la semantica de esta sentencia es: `mientras se cumpla la condicion 
+algo`
 
+```python
+while(): #true
+     print("hola") # es un bucle infinito
+```
+```python
+condicion = True
+while condicion:
+    print("hola")
+```
+>[!TIP]
+> el break es una palabra reservada de python que sirve para finalizar el bucle
 
+> mas ejemplos:
+```python
+condicion=True
+while condicion:
+     eval=input("desea continuar [S/N]:")
+     if eval=="S":
+          print("continuas en el bucle")
+     else:
+          print("se termino el programa")
+          condicion False
+          break
+```
+>METODOS DE STRING
+```python
+nombre="jose"
+print(nombre.upper()) # convierte el texto en mayusculas
 
+apellidos="JOSE"
+print(printnombre.lower()) #convierte el texto en minusculas
 
+segundo_nombre="luis"
+print(segundo_nombre.capitalize()) # comvierte la primera lista en mayuscula
+```
 
 
 

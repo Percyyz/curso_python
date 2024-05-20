@@ -1,10 +1,10 @@
 
 #primer ejemplo de if estructurado
-# edad:int=int(input("escriba su edad :"))
-# if edad>=18:
-#      print("eres mayor")
-# else:
-#      print("eres menor")
+edad:int=int(input("escriba su edad :"))
+if edad>=18:
+     print("eres mayor")
+else:
+     print("eres menor")
 
 # #segundo ejemplo if almacenado en variable
 edad:int=int(input("escriba su edad :"))
@@ -70,3 +70,30 @@ print(ultima_letra)
 letras:str= "aeiou"
 for i in range(len(letras)):  
     print(letras[i] * (i + 1))
+
+###  EJEMPLOS DE WHILE
+
+while True :
+    print ("hola")
+
+#######
+condicion=True
+while condicion:
+     eval=input("desea continuar [S/N]:")
+     if eval=="S":
+          print("continuas en el bucle")
+     else:
+          print("se termino el programa")
+          condicion=False
+          break
+
+
+# #####
+contador=0
+while contador <=5:
+    print(contador)
+    contador+=1
+print(f"valor final {contador}")
+
+
+### crear un programa que pida la cantidad de notas que se debe registrar luego pedira las notas y emprimira el promedio
