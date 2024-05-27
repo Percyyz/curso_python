@@ -30,9 +30,18 @@ lista1.append({
     "apellido":"crezes",
     "edad":30
 })
-
-lista1.pop(2)
-
-len(lista1) > 3
-alumno_posicion_4 = lista1[3]
 print(lista1)
+
+lista1.remove({
+    "nombre":"abel",
+    "apellido":"jurado",
+    "edad":20
+})
+print(lista1)
+
+indice=lista1.index({
+   "nombre":"willians",
+   "apellido":"barrientos",
+   "edad":11 
+})
+print(lista1[indice])
