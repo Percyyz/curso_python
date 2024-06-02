@@ -104,7 +104,7 @@ print(lista) # [2,3,4,5,6]
 ```python
 # modificando lista con diccionario
 alumnos=[{
-    "nombre":"abel,
+    "nombre":"abel",
     "edad":15
 },{
     "nombre":"percy",
