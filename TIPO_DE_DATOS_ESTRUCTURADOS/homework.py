@@ -81,3 +81,72 @@ copia_lista=lista_mascotas.copy()
 print(lista_mascotas)
 copia_lista[3]["edad"]=2
 print(copia_lista)
+
+# 3 UN EMPRESARIO DE ALQUILER DE MOTOS DESEA GUARDAR EN UNA BASE DE DATOS  LA INFORMACION  DE SUS VEHICULOS, PROCESO QUE DESEA AUTOMATIZAR
+# CON UN SISTEMA INFORMATICO, LAS ACCIONES QUE PUEDE REALIZAR EL EMPRESARIO SON  VER LAS LISTAS DE AUTOS QUE TIENE, PODRA TAMBIEN ACTUALIZAR
+# LA LISTA Y AGREGAR UN NUEVO VEHICULO
+
+# CASOS DE USO
+ 
+ # YO COMO EMPRESARIO DE AUTOS
+ # DESEO GUARDAR EN UNA BASE DE DATOS LA INFORMACION DE MIS VEHICULOS
+ # PARA PODER VER LA LISTA DE MIS AUTOS
+
+
+# PROGRAMACION
+lista_autos=[{
+    "matricula":"1111-BAB",
+    "modelo":"19 TSE CHAMADE",
+    "precio":700,
+    "año":2000,
+    "estado":"Bueno",
+    "color":"Plomo",
+    "motor":"Diesel"
+},{
+    "matricula":"1258-FRA",
+    "modelo":"Passat",
+    "precio":8000,
+    "año":2014,
+    "estado":"Bueno",
+    "color":"Rojo",
+    "motor":"Gasolina"
+},{
+    "matricula":"1478-CCA",
+    "modelo":"Astra",
+    "precio":3200,
+    "año":2015,
+    "estado":"Bueno",
+    "color":"Negro",
+    "motor":"Diesel"
+},{
+    "matricula":"2222-AAA",
+    "modelo":"A1 TDI",
+    "precio":5000,
+    "año":2017,
+    "estado":"Bueno",
+    "color":"Blanco",
+    "motor":"Diesel"
+},{
+    "matricula":"5848-EEA",
+    "modelo":"Saxo",
+    "precio":4000,
+    "año":2014,
+    "estado":"Bueno",
+    "color":"Rojo",
+    "motor":"Diesel"
+}]
+print(lista_autos)
+
+ # YO COMO EMPRESARIO DE AUTOS 
+ # DESEO TENER LA LISTA DE MIS AUTOS
+ # PARA PODER ACTUALIZAR MI LISTA  Y AGREGAR UN NUEVO VEHICULO
+
+lista_autos [0]["precio"]
+lista_autos [1]["precio"]
+lista_autos [2]["precio"]
+lista_autos [3]["precio"]
+lista_autos [4]["precio"]
+
+lista_autos.append({
+
+})
