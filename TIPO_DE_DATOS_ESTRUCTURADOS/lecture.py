@@ -51,3 +51,28 @@ copia_lista.sort() # sort() ordena el valor de la lista
 print(lista)
 print(copia_lista)
 
+
+## CLASE DEL MIERCOLES 5 DE JUNIO DEL 2024
+##  crear una lista de numeros enteros del siguiente texto
+texto="1,4,8,9,6"
+nueva_lista=[]
+for n in texto.split(","):
+    nueva_lista.append(int(n))
+    print (nueva_lista)
+
+# aplicando la tecnica vlc valor bucle y condicion
+texto="1,4,8,9,6"
+nueva_lista=[int(n) for n in texto.split(",")if int(n)%2==0 ]
+print(nueva_lista)
+
+
+# diccionarios por comprension
+lista_amigos=["abel","antoni","edhit","ruth"]
+diccionario={}
+for _, v in enumerate(lista_amigos):
+    diccionario[v]=len(v)
+
+# aplicando el vlc
+lista_amigos=["abel","antoni","edhit","ruth"]
+nueva_lista={amigo:len(amigo) for amigo in lista_amigos}
+print(nueva_lista)
