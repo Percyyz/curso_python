@@ -184,3 +184,147 @@ datos = {'nombre': 'Pedro', 'edad': 32}
 # Desempaquetamos los argumentos nominales para llamar a la función
 saludar(**datos)
 ```
+## Funciones internas de python (Tarea)
+Python cuenta con muchas funciones internas (built-in functions) que están disponibles para su uso directo sin necesidad de importar ningún módulo adicional.
+### 1. funciones de conversion de tipos de datos
+En Python, las funciones de conversión de datos permiten `transformar` un tipo de dato en otro. Esto es útil cuando necesitas operar con diferentes tipos de datos o cuando deseas asegurarte de que un `valor` tenga el tipo correcto para cierta operación.
+#### Funcion int:
+En python, la funcion `int` comvierte el valor a un entero.
+>EJEMPLO
+```python
+num_str = "123"
+num_int = int(num_str)  # Convierte la cadena "123" a un entero
+print(num_int)  # Salida: 123
+```
+#### Funcion float:
+En python, la funcion `float` convierte un valor a un número de punto flotante (decimal).
+>EJEMPLO
+```python
+num_str = "123.45"
+num_float = float(num_str)  # Convierte la cadena "123.45" a un flotante
+print(num_float)  # Salida: 123.45
+```
+#### funcion str:
+En python, la funcion `str` convierte un valor a una cadena de caracteres.
+>EJEMPLO
+```python
+num_int = 123
+num_str = str(num_int)  # Convierte el entero 123 a cadena "123"
+print(num_str)  # Salida: "123"
+```
+#### Funcion bool:
+En python, la funcion `bool` convierte un valor a un booleano. Los valores que se consideran False en Python (como 0, None, listas, conjuntos o diccionarios vacíos) se convertirán a False; todos los demás valores se convertirán a True.
+>EJEMPLO
+```python
+value = 0
+bool_value = bool(value)  # Convierte 0 a False
+print(bool_value)  # Salida: False
+```
+>EJEMPLO
+```python
+value = 
+bool_value = bool(value)  # Convierte 1 a True
+print(bool_value)  # Salida: True
+```
+### 2. Funciones de iteracion y generacion
+En Python, las funciones de iteración y generación son fundamentales para trabajar con colecciones de datos de manera eficiente.
+
+son funciones integradas que se utilizan para generar y manipular secuencias de datos de manera eficiente.
+#### Funcion range():
+En python `range()` es una función que genera una secuencia de números.
+>EJEMPLO
+```python
+# Generar una secuencia de 0 a 4
+for i in range(5):
+    print(i)  # Salida: 0 1 2 3 4
+```
+```python
+# Generar una secuencia de 1 a 9
+for i in range(1, 10):
+    print(i)  # Salida: 1 2 3 4 5 6 7 8 9
+```
+```python
+# Generar una secuencia de 0 a 10 con un paso de 2
+for i in range(0, 11, 2):
+    print(i)  # Salida: 0 2 4 6 8 10
+```
+#### Funcion enumerate():
+En Python, `enumerate()` es una función incorporada que agrega un contador a un iterable y lo devuelve en forma de un objeto enumerado.
+>EJEMPLO
+```python
+# Enumerar una lista
+mi_lista = ['a', 'b', 'c']
+for indice, elemento in enumerate(mi_lista):
+    print(indice, elemento)  # Salida: 0 a, 1 b, 2 c
+
+```
+```python
+# Enumerar una cadena con un índice inicial diferente
+mi_cadena = "hola"
+for indice, letra in enumerate(mi_cadena, start=1):
+    print(indice, letra)  # Salida: 1 h, 2 o, 3 l, 4 a
+```
+#### Funcion zip():
+En Python, la función `zip()` se utiliza para combinar dos o más iterables (como listas, tuplas, etc.) en un solo iterable de tuplas, donde cada tupla contiene elementos que ocupan la misma posición en los iterables originales.
+>EJEMPLO
+```python
+# Combinar dos listas
+nombres = ['Alice', 'Bob', 'Charlie']
+edades = [25, 30, 35]
+combinados = zip(nombres, edades)
+for nombre, edad in combinados:
+    print(nombre, edad)  # Salida: Alice 25, Bob 30, Charlie 35
+```
+```python
+# Combinar tres listas
+ciudades = ['New York', 'Los Angeles', 'Chicago']
+for nombre, edad, ciudad in zip(nombres, edades, ciudades):
+    print(nombre, edad, ciudad)  # Salida: Alice 25 New York, Bob 30 Los Angeles, Charlie 35 Chicago
+```
+### 3. Funciones de manipulacion de cadenas
+Una función de manipulación de cadenas es una función dentro de un programa informático diseñada específicamente para operar y transformar cadenas de caracteres.
+
+son métodos integrados en Python que se utilizan para manipular y manejar cadenas de texto.
+#### Funcion format():
+En Python, `format()` es un método que se utiliza para `formatear cadenas` de texto de manera más flexible y legible. Este método permite insertar valores variables dentro de una cadena de formato, facilitando la creación de cadenas compuestas por texto fijo y valores dinámicos.
+>EJEMPLO
+```python
+# Usando argumentos posicionales
+mi_cadena = "Hola, {}. Tienes {} años."
+resultado = mi_cadena.format("Alice", 30)
+print(resultado)  # Salida: Hola, Alice. Tienes 30 años.
+```
+#### Funcion split():
+En python, la funcion `split()` se utiliza para `dividir una cadena` en subcadenas basadas en un delimitador especificado.
+>EJEMPLO
+```python
+# Dividir por espacios en blanco
+mi_cadena = "Hola mundo"
+resultado = mi_cadena.split()
+print(resultado)  # Salida: ['Hola', 'mundo']
+```
+```python
+# Limitar el número de divisiones
+mi_cadena = "uno:dos:tres:cuatro"
+resultado = mi_cadena.split(':', maxsplit=2)
+print(resultado)  # Salida: ['uno', 'dos', 'tres:cuatro']
+```
+#### Funcion join():
+En python la funcion `join()` se utliza para `unir elementos de una lista` (u otro iterable) en una cadena, con un delimitador específico entre cada elemento.
+>EJEMPLO
+```python
+# Unir una lista de cadenas con un espacio
+mi_lista = ['Hola', 'mundo']
+resultado = ' '.join(mi_lista)
+print(resultado)  # Salida: Hola mundo
+```
+```python
+# Unir una lista de cadenas con una coma
+mi_lista = ['uno', 'dos', 'tres']
+resultado = ','.join(mi_lista)
+print(resultado)  # Salida: uno,dos,tres
+```
+### 4. Funciones de control de flujo:
+
+- `print()` para imprimir resultados por consola.
+- `input()` para recibir datos del usuario.
