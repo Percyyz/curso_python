@@ -328,3 +328,11 @@ print(resultado)  # Salida: uno,dos,tres
 
 - `print()` para imprimir resultados por consola.
 - `input()` para recibir datos del usuario.
+  
+## Tipod de funciones
+### Funciones anonimas (Funciones lambda)
+### Funciones closure
+### Funciones callback
+
+
+### Programacion funcional

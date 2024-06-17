@@ -46,3 +46,19 @@ def diccionario(nombre,edad):
 datos_persona = diccionario(nombre, edad)
 print(f"Datos de la persona: {datos_persona}")
 
+# EJERCICIO CON ARGUMENTO EMPAQUETADO/DESEMPAQUETADO POSICIONALES
+def suma(*valores):
+    nueva_lista=list(valores)
+    nueva_lista[0]=10
+    print(nueva_lista)
+suma(2,4,6,3,4)
+
+# EJERCICIO CON ARGUMENTO EMPAQUETADO/DESEMPAQUETADO NOMINALES
+def alumnos(**list_nombres):
+    print(list_nombres)
+alumnos(nombre="percy", apellido="yarihuman", edad=21)
+# tambien podemos modificar nuestro diccionario
+list_nombres={
+    "nombre":"hola"
+}
+list_nombres["nombre"]="percy"
