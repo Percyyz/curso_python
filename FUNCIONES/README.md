@@ -331,8 +331,33 @@ print(resultado)  # Salida: uno,dos,tres
   
 ## Tipod de funciones
 ### Funciones anonimas (Funciones lambda)
+una funcion que no tiene nombre 
+```python
+lambda:"hola"
+# normal
+def saludo():
+    return "hola"
+```
 ### Funciones closure
+son funciones que dentro de su cuerpo tiene otra funcion
 ### Funciones callback
-
+son funciones que recibe por parametro otra funcion
 
 ### Programacion funcional
+la programacion funcional no requiere que sepas como se deasarrola y ejecuta el procesamiento de la informacion
+
+**ejemplo**
+```python
+# programacion iterativa
+lista=[5,7,4,8,1]
+def num_min(l):
+    for i in l:
+        if n < minimo:
+            minimo=n
+    return minimo
+```
+```python
+# programacion funcional
+min(lista)
+```
+#### tarea sobre map(), filter(), reduce()
