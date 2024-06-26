@@ -360,4 +360,65 @@ def num_min(l):
 # programacion funcional
 min(lista)
 ```
-#### tarea sobre map(), filter(), reduce()
+#### TAREA SOBRE MAP(), FILTER(), REDUCE()
+**map():**
+
+La función `map()` en Python es una función integrada que permite aplicar una función especificada a cada elemento de un iterable (como una lista, tupla, etc.) y devolver un nuevo iterable con los resultados.
+>Ejemplos
+```python
+# Usar map() con una función definida:
+
+def cuadrado(x):
+    return x ** 2
+
+numeros = [1, 2, 3, 4, 5]
+resultado = map(cuadrado, numeros)
+print(list(resultado))  # [1, 4, 9, 16, 25]
+```
+```python
+# Usar map() con una función lambda:
+
+numeros = [1, 2, 3, 4, 5]
+resultado = map(lambda x: x ** 2, numeros)
+print(list(resultado))  # [1, 4, 9, 16, 25]
+```
+**filter():**
+
+La función `filter()`, es quizás, una de las funciones más utilizadas al momento de trabajar con colecciones. Cómo su nombre lo indica, esta función nos permite realizar un filtro sobre los elementos de la colección.
+
+La función `filter` también recibe una función y una lista pero el resultado es la lista inicial filtrada. Es decir, se pasa cada elemento de la lista por la función, y sólo si su resultado es True, se incluye en la nueva lista.
+>Ejemplos
+```python
+# Definir una función que devuelve True si un número es par
+def es_par(x):
+    return x % 2 == 0
+
+# Lista de números
+numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# Usar filter para obtener solo los números pares
+resultado = filter(es_par, numeros)
+
+# Convertir el resultado a una lista y mostrarlo
+print(list(resultado))
+```
+**reduce():**
+
+Usaremos la función `reduce()` cuando poseamos una colección de elementos y necesitemos generar un único resultado. reduce nos permitirá reducir los elementos de la colección. Podemos ver a esta función como un acumulador.
+```python
+reduce(función a aplicar, objeto iterable)
+```
+Aquí lo importante es detallar la función a aplicar. Esta función debe de poseer, obligatoriamente, dos parámetros. El primer parámetro hará referencia al acumulador, un variable que irá modificando su valor por cada uno de los elementos en la colección. Por otro lado, el segundo parámetro hará referencia a cada elemento de la colección. La función debe de retornar un nuevo valor, será este nuevo valor el que será asignado al acumulador.
+
+Todo esto suena algo confuzo 🤔, pero no te preocupes, veamos un par de ejemplos.
+```python
+#Obtener la suma de todos los elementos en la lista
+
+lista = [1,2,3,4]
+acumulador = 0;
+
+for elemento in lista:
+    acumulador += elemento
+
+print(acumulador)
+```
