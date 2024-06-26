@@ -42,3 +42,9 @@ suma = calcular_suma(*numeros)
 print(f"El número menor es: {menor}")
 print(f"El número mayor es: {mayor}")
 print(f"La suma de los números es: {suma}")
+
+## TAREA 
+# CREAR UNA LISTA DE ALUMNOS CON LOS SIGUIENTES CAMPOS
+# NOMBRE, APELLIDO, EDAD, CELULAR Y EMAIL.
+# ACTUALIZAR LOS REGISTROS CON UN CAMPO MAS TODOS TENDRAN EL CAMPO EL PROGRAMA DE ESTUDIOS DE ENFERMERIA 
+# BUSCAR EL SEGUNDO REGISTRO Y ACTUALIZAR SU EDAD A 50 AÑOS
