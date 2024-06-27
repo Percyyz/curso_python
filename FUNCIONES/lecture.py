@@ -79,6 +79,11 @@ impares=lambda l:[n for n in lista if n%2!=0]
 print(pares(lista))
 print(impares(lista))
 
+## reducir en pocas linias de codigo
+lista = [2, 6, 4, 8, 2, 12, 45, 67, 87]
+pares_impares = lambda l: ([n for n in l if n % 2 == 0], [n for n in l if n % 2 != 0])
+print(pares_impares(lista))
+
 ## funciones callback
 int(input)
 def mensaje(m):
