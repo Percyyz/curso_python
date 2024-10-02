@@ -19,12 +19,17 @@ class Banco:
     def retirar(self,monto):
         if monto>0:
             self.saldo_inicial=self.saldo_inicial-monto
-            resultado=f"retiro realizado con exito: {self.saldo_inicial}"
+            resultado=f"retiro realizado: {self.saldo_inicial} "
             return resultado
 
+    def ver_estado_cuenta(self):
+        return f"Estado de cuenta es: {self.saldo_inicial}"
+        
+
 percy=Banco("Percy","Yarihuaman",71500856,4111112333,200)
-print(percy.depositar(20))
 print(percy.saldo_inicial)
+print(percy.depositar(20))
+print(percy.retirar(30))
 
 
 # EJERCICIO 2
